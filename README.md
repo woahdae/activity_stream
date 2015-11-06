@@ -76,7 +76,7 @@ from. This both serves for your analytics, plus it is common for the
 referrer to be interested in knowing when a user converts. Everyone from
 a referring friend to a referral network likes knowing when someone
 upgrades on their behalf. Plus, you wouldn't be polluting User with ex.
-\#registered_at, #referrer, or whatehaveyou, unless it really was a core
+\#registered\_at, #referrer, or whatehaveyou, unless it really was a core
 part of your domain.
 
 Analyzing user behavior
@@ -89,6 +89,11 @@ meaningful aspect of your stream.
 * Query by Verb to see *how* users are interacting with content on your site,
 * Query by Object to see *what* users are interacting with on your site,
 * Query by Target to see *where* users are adding content.
+
+A structured stream is a good start to [event stream processing](https://en.wikipedia.org/wiki/Event_stream_processing),
+which is itself a good start to [complex event processing](https://en.wikipedia.org/wiki/Complex_event_processing);
+this library would love to implement anything towards those ends in the
+future for real-time querying and potentially acting on user behavior.
 
 Sharing user behavior
 -----
@@ -117,7 +122,7 @@ email if they haven't been checking the site, but without spamming the
 user.
 
 Some specific scenarios that might apply to, say, activity on a
-doodle.com poll or a facebook feed:
+doodle.com poll or a Facebook feed:
 
 * If the user has already seen the activity online, don't email the user about it.
 * If the user has just been on the site, don't email the user about it right away.
@@ -139,7 +144,6 @@ provides a mechanism for this as well. You can implement a
 feature that tends to spread itself like a weed into all parts of your
 system, ex. coupons, entirely as its own entity without infecting every
 major model of your codebase.
-
 
 Standard gem stuff
 -----
@@ -189,7 +193,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/activity_stream/fork )
+1. Fork it ( https://github.com/[my-github-username]/activity\_stream/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
